@@ -7,16 +7,17 @@ Postman Interceptor is a Chrome extension that syncs up cookies from selected do
 
 ## Installation
 1. Download and install the [Postman Interceptor extension](https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo?hl=en) from the Chrome Web Store.
-2. Whitelist selected domains in the extension and turn on cookie capture:
+2. Ensure that Interceptor is marked as connected and syncing.
+	![Click cookies button](./images/cookies_button.png)
+	- Open the Cookies menu and navigate to the Sync tab.
+  - Install the interceptor bridge if not installed
+	- Any time you log in to a Tradeshift domain, your cookies will be synced with Postman.
+	![Sync cookies](./images/sync_cookies.png)
+3. Whitelist selected domains in the extension and turn on cookie capture:
 	-![Set up extension.](./images/set_up_extension.png)
 	- Open the extension settings and select the "Cookies" tab.
 	- Add in the Tradeshift domains to the domains multi-select.
 	- Turn on cookie capture.
-3. Ensure that Interceptor is marked as connected and syncing.
-	![Click cookies button](./images/cookies_button.png)
-	- Open the Cookies menu and navigate to the Sync tab.
-	- Any time you log in to a Tradeshift domain, your cookies will be synced with Postman.
-	![Sync cookies](./images/sync_cookies.png)
 4. Select a environment:
 	![Select environment](./images/collection_dropdown.png)
 	- Select the collection dropdown and choose your desired environment.
