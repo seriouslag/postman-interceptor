@@ -25,12 +25,12 @@ Postman Interceptor is a Chrome extension that syncs up cookies from selected do
 	- This allows cookies captured from the extension to be used inside of postman scripts
       		![Open Domain Allowlist](./images/open_domain_allowlist.png)
       		![Add domains to allowlist](./images/add_domains_to_allowlist.png)
-4. Select a environment in the Cash workspace:
+5. Select a environment in the Cash workspace:
     	- Select the Cash workspace
     	![Select Cash workspace](./images/cash_workspace.png)
 	- Select your desired environment.
 	![Select environment](./images/collection_dropdown.png)
-5. Log in to desired environment:
+6. Log in to desired environment:
 	- if you selected sandbox in the environment dropdown then log in to sandbox.
     	![Log in to environment](./images/env_login.png)
 	- Pre-request script
@@ -39,9 +39,13 @@ Postman Interceptor is a Chrome extension that syncs up cookies from selected do
 		- The script only runs once a minute unless your cookie changes.
 			![Collections](./images/collections.png)
 			![Pre-request scripts](./images/prerequest_script.png)
+7. Make requests from the Tradeshift collection in the Cash workspace in postman.
+	- Authentication tokens will automatically be handled by postman andpostman interceptor for the selected environment.
+  	- Make sure you are logged in to the correct environment. 
 
 ## Troubleshooting
-If facing any issues, please check the console for any errors. There should be plenty of logs to help you debug.
+- If facing any issues, please check the console for any errors. There should be plenty of logs to help you debug.
+- If cookies are not syncing - log out of tradeshift, restart chrome, and restart postman. Then log back into the correct env on tradeshift.
 
 ## Note on Environments
 The environments are global, so we may end up sharing tokens between users. We may need to look into how we can access variables local to our machine, but in the meantime, this setup should work.
