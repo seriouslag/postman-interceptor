@@ -25,12 +25,14 @@ Postman Interceptor is a Chrome extension that syncs up cookies from selected do
 	- This allows cookies captured from the extension to be used inside of postman scripts
       		![Open Domain Allowlist](./images/open_domain_allowlist.png)
       		![Add domains to allowlist](./images/add_domains_to_allowlist.png)
-      	
 4. Select a environment in the Cash workspace:
+    	- Select the Cash workspace
+    	![Select Cash workspace](./images/cash_workspace.png)
+	- Select your desired environment.
 	![Select environment](./images/collection_dropdown.png)
-	- Select the collection dropdown and choose your desired environment.
-5. Log in to selected environment:
+5. Log in to desired environment:
 	- if you selected sandbox in the environment dropdown then log in to sandbox.
+    	![Log in to environment](./images/env_login.png)
 	- Pre-request script
 		- A pre-request script was added to the 'Tradeshift' collection.
 		- This script will check for a valid environment and auth cookie, then will fetch an auth bearer token.
